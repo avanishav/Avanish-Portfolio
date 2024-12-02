@@ -1,7 +1,7 @@
 import frontendIcon from "../../assets/Frontend.png";
 import backendIcon from "../../assets/Backend.png";
 import toolsIcon from "../../assets/tools.png";
-import FoodApp from "../../assets/food-App.png";
+import FoodApp from "../../assets/Food-App.png";
 import studySync from "../../assets/studySync.png";
 import NewsApp from "../../assets/News-App.png";
 
