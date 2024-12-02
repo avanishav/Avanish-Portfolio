@@ -1,0 +1,108 @@
+.project-card {
+  background: #130f2a;
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  padding: 1.5rem;
+  margin: 0.4rem 1rem;
+  max-width: 25rem;
+}
+
+.project-card img {
+  width: 100%; /* Adjust to the parent div */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+}
+
+.project-content {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0.6rem;
+  margin-bottom: 1.3rem;
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: relative;
+  margin: 0.6rem 0;
+}
+
+/* .project-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.project-content ul li {
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 5rem;
+  text-align: center;
+  margin: 0.2rem;
+  border-radius: 5px;
+  padding: 0.4rem;
+  position: relative;
+  background: linear-gradient(90deg, #a892fe 0%, #8064e8 100%) !important;
+} */
+
+/* Media query for responsiveness */
+@media (max-width: 897px) {
+  .project-card {
+    max-width: 90%; 
+    padding: 1rem;
+  }
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.7rem;
+  }
+  .project-content ul li {
+    font-size: 0.7rem;
+    width: 5rem;
+  }
+}
+.btn-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn-div a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(90deg, #6a5acd, #483d8b);
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn-div a:hover {
+  background: linear-gradient(90deg, #483d8b, #6a5acd);
+  transform: scale(1.05);
+  color: #f0f0f0;
+}
+
+.btn-div a:active {
+  transform: scale(0.95);
+  background: linear-gradient(90deg, #2e2b5f, #2e2b5f);
+}

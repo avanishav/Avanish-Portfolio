@@ -1,0 +1,41 @@
+.project-container{
+  margin: 4rem 0;
+  position: relative;
+}
+.project-container h5{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+/* @media(max-width: 912px){
+  .project-container h5{
+    text-align: center;
+  }
+} */
+
+.project-container::after,
+.project-container::before{
+  content: " ";
+  width: 28.125rem;
+  height: 28.125rem;
+  border-radius: 28.125rem;
+  background: #7c66e3;
+  position: absolute;
+  z-index: -1;
+  filter: blur(225px);
+}
+.project-container::after{
+  top: -3rem;
+  left: -5rem;
+}
+
+.project-container::before{
+  bottom: 2rem;
+  right: 0rem;
+}
