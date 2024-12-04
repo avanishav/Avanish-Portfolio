@@ -31,17 +31,17 @@ export const SKILLS = [
     skills: [
       { skill: "Git & GitHub", percentage: "85%" },
       { skill: "Visual Studio Code", percentage: "75%" },
-      { skill: "Webpack", percentage: "60%" },
+      { skill: "MySQl", percentage: "70%" },
       { skill: "Responsive Design", percentage: "70%" },
     ],
   },
   {
-    title: "Soft Skills",
+    title: "Programming Language",
     icon: softSkillsIcon, // Update with the imported soft skills image
     skills: [
-      { skill: "Problem-Solving", percentage: "80%" },
-      { skill: "Collaboration", percentage: "85%" },
-      { skill: "Attention to Detail", percentage: "75%" },
+      { skill: "C++", percentage: "80%" },
+      { skill: "Python", percentage: "70%" },
+      { skill: "JavaScript", percentage: "80%" },
     ],
   },
 ];
