@@ -5,6 +5,9 @@ import FoodApp from "../../assets/Food-App.png";
 import studySync from "../../assets/studySync.png";
 import NewsApp from "../../assets/News-App.png";
 import softSkillsIcon from "../../assets/softskill.png";
+import Github from "../../assets/github1.png";
+import Linkedin from "../../assets/linkedin.png";
+import twitter from "../../assets/twitter.png";
 
 export const SKILLS = [
   {
@@ -66,17 +69,41 @@ export const PROJECT = [
     icon: NewsApp,
     Description:
       "The News App is a dynamic web application built with React and News API, offering users real-time news updates across various categories. Styled with Bootstrap",
+    Demo: "",
+    Source: "",
   },
   {
     title: "Burger Food App",
     icon: FoodApp,
     Description:
       "A Food Delivery App built with React, Redux, and Bootstrap, featuring dynamic functionality, state management, and a responsive design for a seamless user experience.",
+    Demo: "",
+    Source: "",
   },
   {
     title: "Study Sync",
     icon: studySync,
     Description:
       "Study Sync is a web-based platform designed using HTML and CSS, offering a clean and responsive interface for seamless learning and collaboration.",
+    Demo: "https://avanishav.github.io/Study-sync/",
+    Source: "https://github.com/avanishav/Study-sync",
+  },
+];
+
+export const SOCIAL = [
+  {
+    title: "Github",
+    url: "https://github.com/avanishav",
+    src: Github,
+  },
+  {
+    title: "Linkedin",
+    url: "https://www.linkedin.com/in/avanish-singhav/",
+    src: Linkedin,
+  },
+  {
+    title: "Twitter",
+    url: "https://x.com/singhavanish720",
+    src: twitter,
   },
 ];
