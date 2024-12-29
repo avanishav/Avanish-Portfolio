@@ -1,10 +1,11 @@
-.contact-container{
+.contact-container {
   margin-top: 4rem;
   margin-bottom: 6rem;
   position: relative;
 }
+
 .contact-container::after,
-.contact-container::before{
+.contact-container::before {
   content: " ";
   width: 38.125rem;
   height: 38.125rem;
@@ -14,64 +15,95 @@
   z-index: -1;
   filter: blur(225px);
 }
-.contact-container::after{
+
+.contact-container::after {
   top: -3rem;
   left: -5rem;
 }
 
-.contact-container::before{
+.contact-container::before {
   bottom: 2rem;
   right: 0rem;
 }
 
-.contact-container h5{
+.contact-container h5 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 3rem;
 }
 
-.contact-content{
+.contact-content {
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
- 
-@media (max-width: 768px){
-  .contact-content{
-    flex-direction: column-reverse;
-  }
 
-  .contact-container h5{
-    font-size: 1.3rem;
-    margin-bottom: 0.6rem;
-  }
-}
-@media (min-width: 768px){
-  .contact-content-card{
-    width: 40%;
-  }
-}
-.contact-content-card{
+.contact-content-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding: 1rem; */
-  /* width: 40%; */
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
 }
-.social-madia-connect{
+
+.social-madia-connect {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.contact-mail{
-  width: 25rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: #130f2a;
-    border-radius: 0.65rem;
-    border: 1.5px solid #6751b9;
-    padding: 1rem;
-    margin: .3rem;
-    gap: 1rem;
+
+.contact-mail {
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #130f2a;
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  padding: 1rem;
+  margin: 0.3rem;
+  gap: 1rem;
+}
+
+.contact-mail h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column-reverse;
+  }
+
+  .contact-container h5 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .contact-content-card {
+    width: 100%;
+  }
+
+  .contact-mail {
+    width: 100%;
+  }
+
+  .contact-mail h4 {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-content-card {
+    width: 40%;
+  }
 }
