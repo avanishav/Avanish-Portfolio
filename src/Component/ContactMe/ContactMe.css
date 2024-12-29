@@ -70,7 +70,7 @@
   gap: 1rem;
 }
 
-.contact-mail h4 {
+.contact-mail p {
   font-size: 1.2rem;
   font-weight: 500;
   color: #ffffff;
@@ -96,7 +96,7 @@
     width: 100%;
   }
 
-  .contact-mail h4 {
+  .contact-mail p {
     font-size: 1rem;
     line-height: 1.4;
   }
@@ -105,5 +105,12 @@
 @media (min-width: 768px) {
   .contact-content-card {
     width: 40%;
+  }
+}
+@media(min-width: 372px){
+  .contact-mail p {
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1.4;
   }
 }

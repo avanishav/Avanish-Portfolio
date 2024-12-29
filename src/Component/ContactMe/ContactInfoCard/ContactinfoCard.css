@@ -1,4 +1,4 @@
-.contact-details-card{
+.contact-details-card {
   width: 8rem;
   height: 8rem;
   display: flex;
@@ -9,13 +9,13 @@
   border-radius: 0.65rem;
   border: 1.5px solid #6751b9;
   padding: 1rem;
-  margin: .3rem;
+  margin: 0.3rem;
   gap: 1rem;
 }
 
-.contact-details-card .icon{
+.contact-details-card .icon {
   width: 4rem;
-  height: 12rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,15 +23,59 @@
   background: #b8aaec;
 }
 
-.icon img{
+.icon img {
   width: 2.8rem;
   height: auto;
   object-fit: contain;
 }
 
-.contact-details-card a{
+.contact-details-card a {
   font-size: 1.2rem;
   font-weight: 500;
   text-decoration: none;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-details-card {
+    width: 6.5rem; /* Adjusted size for smaller screens */
+    height: 6.5rem;
+    padding: 0.8rem; /* Reduced padding */
+    gap: 0.8rem; /* Reduced gap */
+  }
+
+  .contact-details-card .icon {
+    width: 3.5rem; /* Smaller icon */
+    height: 3.5rem;
+  }
+
+  .icon img {
+    width: 2.4rem; /* Adjust image size */
+  }
+
+  .contact-details-card a {
+    font-size: 1rem; /* Smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-details-card {
+    width: 5.5rem; /* Further reduced size */
+    height: 5.5rem;
+    padding: 0.5rem; /* Minimal padding */
+    gap: 0.5rem; /* Compact gap */
+  }
+
+  .contact-details-card .icon {
+    width: 3rem; /* Smaller icon */
+    height: 3rem;
+  }
+
+  .icon img {
+    width: 2rem; /* Compact image size */
+  }
+
+  .contact-details-card a {
+    font-size: 0.9rem; /* Smaller font size for narrow screens */
+  }
 }
